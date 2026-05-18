@@ -1,0 +1,1 @@
+# dusme_ve_hareketsizlik_tespiti
