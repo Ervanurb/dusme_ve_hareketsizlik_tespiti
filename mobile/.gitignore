@@ -5,6 +5,10 @@ node_modules/
 
 # Expo
 .expo/
+.vscode/
+.claude/
+.claude.md/
+.agents.md/
 dist/
 web-build/
 expo-env.d.ts
