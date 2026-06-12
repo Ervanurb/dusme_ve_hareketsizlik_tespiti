@@ -66,67 +66,55 @@ Veri akışı: mobil uygulama sensör verisini gönderir → backend cihaz sahip
 
 ## Mobil Uygulama
 
-### Giriş Ekranı
+<p align="center">
+  <img src="images/mobil_giris_yap.jpeg" width="220">
+  <img src="images/mobil_kayit_ol.jpeg" width="220">
+  <img src="images/mobil_anasayfa01.jpeg" width="220">
+</p>
 
-![Mobil Giriş](images/mobil_giris_yap.jpeg)
+<p align="center">
+  <img src="images/mobil_anasayfa02.jpeg" width="220">
+  <img src="images/mobil_alarm.jpeg" width="220">
+  <img src="images/mobil_kullanici_profil.jpeg" width="220">
+</p>
 
-### Kayıt Ekranı
-
-![Mobil Kayıt](images/mobil_kayit_ol.jpeg)
-
-### Ana Sayfa
-
-![Mobil Ana Sayfa 1](images/mobil_anasayfa01.jpeg)
-
-![Mobil Ana Sayfa 2](images/mobil_anasayfa02.jpeg)
-
-### Alarm Geçmişi
-
-![Mobil Alarm](images/mobil_alarm.jpeg)
-
-### Kullanıcı Profili
-
-![Mobil Kullanıcı Profil](images/mobil_kullanici_profil.jpeg)
-
-### Admin Profili
-
-![Mobil Admin Profil](images/mobil_admin_profil.jpeg)
-
----
+<p align="center">
+  <img src="images/mobil_admin_profil.jpeg" width="220">
+</p>
 
 ## Web Paneli
 
-### Giriş Sayfası
+<p align="center">
+  <img src="images/web_giris_yap.png" width="450">
+</p>
 
-![Web Giriş](images/web_giris_yap.png)
+<p align="center">
+  <img src="images/web_kayit_ol.png" width="450">
+</p>
 
-### Kayıt Sayfası
+<p align="center">
+  <img src="images/web_kullanici_panel.png" width="700">
+</p>
 
-![Web Kayıt](images/web_kayit_ol.png)
+<p align="center">
+  <img src="images/web_kullanici_alarm.png" width="700">
+</p>
 
-### Kullanıcı Paneli
+<p align="center">
+  <img src="images/web_kullanici_veri.png" width="700">
+</p>
 
-![Web Kullanıcı Panel](images/web_kullanici_panel.png)
+<p align="center">
+  <img src="images/web_admin_panel.png" width="700">
+</p>
 
-### Kullanıcı Alarm Ekranı
+<p align="center">
+  <img src="images/web_admin_alarm.png" width="700">
+</p>
 
-![Web Kullanıcı Alarm](images/web_kullanici_alarm.png)
-
-### Kullanıcı Veri Ekranı
-
-![Web Kullanıcı Veri](images/web_kullanici_veri.png)
-
-### Admin Paneli
-
-![Web Admin Panel](images/web_admin_panel.png)
-
-### Admin Alarm Ekranı
-
-![Web Admin Alarm](images/web_admin_alarm.png)
-
-### Admin Veri Ekranı
-
-![Web Admin Veri](images/web_admin_veri.png)
+<p align="center">
+  <img src="images/web_admin_veri.png" width="700">
+</p>
 
 ## Kurulum ve Çalıştırma
  
