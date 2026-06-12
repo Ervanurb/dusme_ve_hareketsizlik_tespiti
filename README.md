@@ -146,11 +146,11 @@ Veri akışı: mobil uygulama sensör verisini gönderir → backend cihaz sahip
 ## Veri Tabanı Şeması 
 
 <p align="center">
-  <img src="veritabani_semasi_cekirdek.png" width="350">
+  <img src="images/veritabani_semasi_cekirdek.png" width="350">
 </p>
 
 <p align="center">
-  <img src="veritabani_semasi_genisleme.png" width="600">
+  <img src="images/veritabani_semasi_genisleme.png" width="600">
 </p>
 
 ## Kurulum ve Çalıştırma
