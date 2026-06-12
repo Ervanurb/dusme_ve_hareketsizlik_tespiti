@@ -62,59 +62,72 @@ Veri akışı: mobil uygulama sensör verisini gönderir → backend cihaz sahip
 | Mobil | React Native / Expo SDK 53, expo-sensors, expo-location, expo-secure-store, axios |
 | Web Paneli | React 18, Vite, Recharts, socket.io-client |
 
-# Ekran Görüntüleri
+## 📱 Mobil Uygulama
 
-## Mobil Uygulama
+| Giriş                                               | Kayıt                                              | Ana Sayfa                                            |
+| --------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------- |
+| <img src="images/mobil_giris_yap.jpeg" width="220"> | <img src="images/mobil_kayit_ol.jpeg" width="220"> | <img src="images/mobil_anasayfa01.jpeg" width="220"> |
 
-<p align="center">
-  <img src="images/mobil_giris_yap.jpeg" width="220">
-  <img src="images/mobil_kayit_ol.jpeg" width="220">
-  <img src="images/mobil_anasayfa01.jpeg" width="220">
-</p>
+| Ana Sayfa 2                                          | Alarm Geçmişi                                   | Kullanıcı Profili                                          |
+| ---------------------------------------------------- | ----------------------------------------------- | ---------------------------------------------------------- |
+| <img src="images/mobil_anasayfa02.jpeg" width="220"> | <img src="images/mobil_alarm.jpeg" width="220"> | <img src="images/mobil_kullanici_profil.jpeg" width="220"> |
 
-<p align="center">
-  <img src="images/mobil_anasayfa02.jpeg" width="220">
-  <img src="images/mobil_alarm.jpeg" width="220">
-  <img src="images/mobil_kullanici_profil.jpeg" width="220">
-</p>
+| Admin Profili                                          |
+| ------------------------------------------------------ |
+| <img src="images/mobil_admin_profil.jpeg" width="220"> |
 
-<p align="center">
-  <img src="images/mobil_admin_profil.jpeg" width="220">
-</p>
+---
 
-## Web Paneli
+## 💻 Web Paneli
+
+### Giriş Sayfası
 
 <p align="center">
-  <img src="images/web_giris_yap.png" width="450">
+  <img src="images/web_giris_yap.png" width="800">
 </p>
 
-<p align="center">
-  <img src="images/web_kayit_ol.png" width="450">
-</p>
+### Kayıt Sayfası
 
 <p align="center">
-  <img src="images/web_kullanici_panel.png" width="700">
+  <img src="images/web_kayit_ol.png" width="800">
 </p>
 
-<p align="center">
-  <img src="images/web_kullanici_alarm.png" width="700">
-</p>
+### Kullanıcı Paneli
 
 <p align="center">
-  <img src="images/web_kullanici_veri.png" width="700">
+  <img src="images/web_kullanici_panel.png" width="900">
 </p>
 
-<p align="center">
-  <img src="images/web_admin_panel.png" width="700">
-</p>
+### Kullanıcı Veri Ekranı
 
 <p align="center">
-  <img src="images/web_admin_alarm.png" width="700">
+  <img src="images/web_kullanici_veri.png" width="900">
 </p>
 
+### Kullanıcı Alarm Ekranı
+
 <p align="center">
-  <img src="images/web_admin_veri.png" width="700">
+  <img src="images/web_kullanici_alarm.png" width="900">
 </p>
+
+### Admin Paneli
+
+<p align="center">
+  <img src="images/web_admin_panel.png" width="900">
+</p>
+
+### Admin Alarm Ekranı
+
+<p align="center">
+  <img src="images/web_admin_alarm.png" width="900">
+</p>
+
+### Admin Veri Ekranı
+
+<p align="center">
+  <img src="images/web_admin_veri.png" width="900">
+</p>
+
 
 ## Kurulum ve Çalıştırma
  
