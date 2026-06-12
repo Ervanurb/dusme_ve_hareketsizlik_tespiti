@@ -64,68 +64,83 @@ Veri akışı: mobil uygulama sensör verisini gönderir → backend cihaz sahip
 
 ## 📱 Mobil Uygulama
 
-| Giriş                                               | Kayıt                                              | Ana Sayfa                                            |
-| --------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------- |
-| <img src="images/mobil_giris_yap.jpeg" width="220"> | <img src="images/mobil_kayit_ol.jpeg" width="220"> | <img src="images/mobil_anasayfa01.jpeg" width="220"> |
+<table align="center">
+<tr>
+<td align="center">
+<img src="images/mobil_giris_yap.jpeg" width="180"><br>
+<b>Giriş</b>
+</td>
 
-| Ana Sayfa 2                                          | Alarm Geçmişi                                   | Kullanıcı Profili                                          |
-| ---------------------------------------------------- | ----------------------------------------------- | ---------------------------------------------------------- |
-| <img src="images/mobil_anasayfa02.jpeg" width="220"> | <img src="images/mobil_alarm.jpeg" width="220"> | <img src="images/mobil_kullanici_profil.jpeg" width="220"> |
+<td align="center">
+<img src="images/mobil_kayit_ol.jpeg" width="180"><br>
+<b>Kayıt</b>
+</td>
 
-| Admin Profili                                          |
-| ------------------------------------------------------ |
-| <img src="images/mobil_admin_profil.jpeg" width="220"> |
+<td align="center">
+<img src="images/mobil_anasayfa01.jpeg" width="180"><br>
+<b>Ana Sayfa</b>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<img src="images/mobil_anasayfa02.jpeg" width="180"><br>
+<b>Ana Sayfa 2</b>
+</td>
+
+<td align="center">
+<img src="images/mobil_alarm.jpeg" width="180"><br>
+<b>Alarm Geçmişi</b>
+</td>
+
+<td align="center">
+<img src="images/mobil_kullanici_profil.jpeg" width="180"><br>
+<b>Kullanıcı Profili</b>
+</td>
+</tr>
+
+<tr>
+<td colspan="3" align="center">
+<img src="images/mobil_admin_profil.jpeg" width="180"><br>
+<b>Admin Profili</b>
+</td>
+</tr>
+</table>
 
 ---
 
 ## 💻 Web Paneli
 
-### Giriş Sayfası
-
 <p align="center">
-  <img src="images/web_giris_yap.png" width="800">
+  <img src="images/web_giris_yap.png" width="500">
 </p>
 
-### Kayıt Sayfası
-
 <p align="center">
-  <img src="images/web_kayit_ol.png" width="800">
+  <img src="images/web_kayit_ol.png" width="500">
 </p>
 
-### Kullanıcı Paneli
-
 <p align="center">
-  <img src="images/web_kullanici_panel.png" width="900">
+  <img src="images/web_kullanici_panel.png" width="650">
 </p>
 
-### Kullanıcı Veri Ekranı
-
 <p align="center">
-  <img src="images/web_kullanici_veri.png" width="900">
+  <img src="images/web_kullanici_veri.png" width="650">
 </p>
 
-### Kullanıcı Alarm Ekranı
-
 <p align="center">
-  <img src="images/web_kullanici_alarm.png" width="900">
+  <img src="images/web_kullanici_alarm.png" width="650">
 </p>
 
-### Admin Paneli
-
 <p align="center">
-  <img src="images/web_admin_panel.png" width="900">
+  <img src="images/web_admin_panel.png" width="650">
 </p>
 
-### Admin Alarm Ekranı
-
 <p align="center">
-  <img src="images/web_admin_alarm.png" width="900">
+  <img src="images/web_admin_veri.png" width="650">
 </p>
 
-### Admin Veri Ekranı
-
 <p align="center">
-  <img src="images/web_admin_veri.png" width="900">
+  <img src="images/web_admin_alarm.png" width="650">
 </p>
 
 
