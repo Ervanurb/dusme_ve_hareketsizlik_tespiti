@@ -61,7 +61,73 @@ Veri akışı: mobil uygulama sensör verisini gönderir → backend cihaz sahip
 | Veritabanı | PostgreSQL (Neon Cloud), pg (node-postgres) |
 | Mobil | React Native / Expo SDK 53, expo-sensors, expo-location, expo-secure-store, axios |
 | Web Paneli | React 18, Vite, Recharts, socket.io-client |
- 
+
+# Ekran Görüntüleri
+
+## Mobil Uygulama
+
+### Giriş Ekranı
+
+![Mobil Giriş](images/mobil_giris_yap.jpeg)
+
+### Kayıt Ekranı
+
+![Mobil Kayıt](images/mobil_kayit_ol.jpeg)
+
+### Ana Sayfa
+
+![Mobil Ana Sayfa 1](images/mobil_anasayfa01.jpeg)
+
+![Mobil Ana Sayfa 2](images/mobil_anasayfa02.jpeg)
+
+### Alarm Geçmişi
+
+![Mobil Alarm](images/mobil_alarm.jpeg)
+
+### Kullanıcı Profili
+
+![Mobil Kullanıcı Profil](images/mobil_kullanici_profil.jpeg)
+
+### Admin Profili
+
+![Mobil Admin Profil](images/mobil_admin_profil.jpeg)
+
+---
+
+## Web Paneli
+
+### Giriş Sayfası
+
+![Web Giriş](images/web_giris_yap.png)
+
+### Kayıt Sayfası
+
+![Web Kayıt](images/web_kayit_ol.png)
+
+### Kullanıcı Paneli
+
+![Web Kullanıcı Panel](images/web_kullanici_panel.png)
+
+### Kullanıcı Alarm Ekranı
+
+![Web Kullanıcı Alarm](images/web_kullanici_alarm.png)
+
+### Kullanıcı Veri Ekranı
+
+![Web Kullanıcı Veri](images/web_kullanici_veri.png)
+
+### Admin Paneli
+
+![Web Admin Panel](images/web_admin_panel.png)
+
+### Admin Alarm Ekranı
+
+![Web Admin Alarm](images/web_admin_alarm.png)
+
+### Admin Veri Ekranı
+
+![Web Admin Veri](images/web_admin_veri.png)
+
 ## Kurulum ve Çalıştırma
  
 ### Ön Gereksinimler
