@@ -7,7 +7,7 @@ exports.createSensorData = async (req, res, next) => {
     const device = await pool.query('SELECT * FROM devices WHERE id=$1 AND (user_id=$2 OR $3=$4)', [deviceId, req.user.id, req.user.role, 'admin']);
     if (!device.rows[0]) return res.status(404).json({ message: 'Cihaz bulunamadı veya yetkiniz yok' });
     const mag = Number(accelerationMagnitude ?? Math.sqrt(accelerometer.x ** 2 + accelerometer.y ** 2 + accelerometer.z ** 2));
-    // Föy 5.1: veriler zaman damgası ile gönderilmeli. İstemci geçerli bir recordedAt
+    // Veriler zaman damgası ile gönderilmeli. İstemci geçerli bir recordedAt
     // gönderdiyse onu kullan; göndermediyse sunucu saatine düş (geriye uyumlu).
     const recorded = recordedAt && !Number.isNaN(Date.parse(recordedAt)) ? new Date(recordedAt) : new Date();
     const { rows } = await pool.query(
