@@ -1,4 +1,4 @@
-const bcrypt = require("bcryptjs");
+const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const pool = require("../../config/db");
 
@@ -48,4 +48,35 @@ const login = async ({ email, password }) => {
   };
 };
 
-module.exports = { register, login };
+// Refresh token ile yeni access token üretir.
+// Token hem imza olarak doğrulanır hem de veritabanındaki kayıtla eşleştirilir.
+const refresh = async ({ refreshToken }) => {
+  if (!refreshToken) throw new Error("Refresh token gerekli");
+
+  let payload;
+  try {
+    payload = jwt.verify(refreshToken, process.env.JWT_REFRESH_SECRET);
+  } catch {
+    throw new Error("Geçersiz veya süresi dolmuş refresh token");
+  }
+
+  const stored = await pool.query(
+    `SELECT id FROM refresh_tokens WHERE user_id=$1 AND token=$2 AND expires_at > NOW() LIMIT 1`,
+    [payload.id, refreshToken]
+  );
+  if (stored.rows.length === 0) throw new Error("Refresh token bulunamadı veya süresi dolmuş");
+
+  const result = await pool.query("SELECT id, full_name, role FROM users WHERE id = $1", [payload.id]);
+  const user = result.rows[0];
+  if (!user) throw new Error("Kullanıcı bulunamadı");
+
+  const accessToken = jwt.sign(
+    { id: user.id, role: user.role },
+    process.env.JWT_SECRET,
+    { expiresIn: "1h" }
+  );
+
+  return { accessToken, user };
+};
+
+module.exports = { register, login, refresh };

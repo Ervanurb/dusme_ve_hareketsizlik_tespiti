@@ -1,0 +1,10 @@
+const router = require('express').Router();
+const { body } = require('express-validator');
+const auth = require('../../middleware/auth');
+const validate = require('../../middleware/validate');
+const c = require('./device.controller');
+router.use(auth);
+router.get('/', c.listDevices);
+router.post('/', [body('device_name').notEmpty().withMessage('Cihaz adı zorunlu')], validate, c.createDevice);
+router.patch('/:id/status', c.updateStatus);
+module.exports = router;

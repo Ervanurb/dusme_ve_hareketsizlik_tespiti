@@ -1,0 +1,10 @@
+const router = require('express').Router();
+const { body } = require('express-validator');
+const auth = require('../../middleware/auth');
+const validate = require('../../middleware/validate');
+const c = require('./sensor.controller');
+router.use(auth);
+router.post('/', [body('deviceId').isUUID().withMessage('Geçerli deviceId zorunlu'), body('accelerometer').isObject(), body('gyroscope').isObject()], validate, c.createSensorData);
+router.get('/latest', c.latestSensorData);
+router.get('/', c.listSensorData);
+module.exports = router;

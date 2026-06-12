@@ -6,7 +6,7 @@ CREATE TABLE users (
     email VARCHAR(150) UNIQUE NOT NULL,
     password_hash TEXT NOT NULL,
     role VARCHAR(20) NOT NULL DEFAULT 'user',
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE devices (
@@ -15,7 +15,7 @@ CREATE TABLE devices (
     device_name VARCHAR(100),
     device_type VARCHAR(50),
     is_active BOOLEAN DEFAULT true,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE sensor_data (
@@ -30,7 +30,7 @@ CREATE TABLE sensor_data (
     latitude DOUBLE PRECISION,
     longitude DOUBLE PRECISION,
     acceleration_magnitude DOUBLE PRECISION,
-    recorded_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+    recorded_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE alerts (
@@ -42,15 +42,15 @@ CREATE TABLE alerts (
     severity VARCHAR(20) DEFAULT 'medium',
     message TEXT,
     is_resolved BOOLEAN DEFAULT false,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE refresh_tokens (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
     token TEXT NOT NULL,
-    expires_at TIMESTAMP NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    expires_at TIMESTAMPTZ NOT NULL,
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
 );
 
 -- Acil durumda aranacak/yönlendirilecek kişiler
@@ -61,7 +61,7 @@ CREATE TABLE emergency_contacts (
     phone_number VARCHAR(30),
     email VARCHAR(150),
     relationship VARCHAR(50),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
 );
 
 -- Kullanıcının son/ geçmiş konum kayıtları
@@ -71,7 +71,7 @@ CREATE TABLE user_locations (
     device_id UUID REFERENCES devices(id) ON DELETE SET NULL,
     latitude DOUBLE PRECISION NOT NULL,
     longitude DOUBLE PRECISION NOT NULL,
-    recorded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    recorded_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
 );
 
 -- Kullanıcının takip oturumları
@@ -79,8 +79,8 @@ CREATE TABLE activity_sessions (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
     device_id UUID REFERENCES devices(id) ON DELETE SET NULL,
-    started_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    ended_at TIMESTAMP,
+    started_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
+    ended_at TIMESTAMPTZ,
     status VARCHAR(30) DEFAULT 'active'
 );
 
@@ -93,7 +93,7 @@ CREATE TABLE notification_logs (
     recipient VARCHAR(150),
     message TEXT,
     status VARCHAR(30) DEFAULT 'pending',
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
 );
 
 -- Alarm eşik değerleri
@@ -104,5 +104,5 @@ CREATE TABLE alert_rules (
     threshold_value DOUBLE PRECISION,
     duration_seconds INTEGER,
     is_active BOOLEAN DEFAULT true,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
 );
