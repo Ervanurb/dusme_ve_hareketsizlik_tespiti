@@ -1,10 +1,7 @@
 # Düşme ve Hareketsizlik Tespiti Platformu
  
 Akıllı telefonu bir IoT uç cihazı olarak kullanarak, yaşlı bireyler ve yalnız yaşayan kişiler için **düşme şüphesi** ve **uzun süreli hareketsizlik** durumlarını gerçek zamanlı tespit eden mobil güvenlik platformu.
- 
-> Bursa Teknik Üniversitesi — Bilgisayar Mühendisliği Bölümü
-> **Node.js ile Web Programlama** Dönem Projesi · Senaryo 2: Düşme ve Hareketsizlik Tespiti
- 
+
 ## Özellikler
  
 -  **Mobil sensör toplama:** İvmeölçer, jiroskop ve GPS verileri 1 Hz örnekleme ile toplanır; her 3 saniyede bir zaman damgalı (ISO 8601) olarak sunucuya gönderilir.
@@ -105,8 +102,6 @@ npm run dev            # geliştirme (nodemon) — veya: npm start
 | `MOVEMENT_EPSILON` | Hareketsizlik için min-max fark eşiği (g) | `0.08` |
 | `INACTIVITY_COOLDOWN_SECONDS` | Hareketsizlik alarmı tekrar bekleme süresi (sn) | `120` |
  
-> ⚠️ Gerçek `.env` dosyası repoya / teslim paketine **asla** eklenmemelidir.
- 
 ### 3. İlk Admin Kullanıcısı
  
 `/api/admin/create-admin` ucu admin yetkisi gerektirdiğinden, ilk admin elle yetkilendirilir:
@@ -182,7 +177,6 @@ Bağlantı JWT ile doğrulanır: `io(API_ORIGIN, { auth: { token } })`. Her kull
  
 - **Düşme şüphesi (eşik tabanlı):** Anlık ivme büyüklüğü √(x²+y²+z²) ≥ `FALL_THRESHOLD` ise `fall_suspected` / `high` alarmı üretilir.
 - **Hareketsizlik (zaman serisi):** Son `INACTIVITY_SECONDS` saniyedeki kayıtlarda (en az 3 kayıt) max−min farkı `MOVEMENT_EPSILON` altındaysa `inactivity` / `medium` alarmı üretilir; aynı cihaz için `INACTIVITY_COOLDOWN_SECONDS` içinde tekrar alarm üretilmez.
-> Mobil uygulamadaki istemci taraflı düşme eşiği, backend `.env` dosyasındaki `FALL_THRESHOLD` ile **aynı değerde** tutulmalıdır (varsayılan 1.6g).
  
 ## Gizlilik ve Güvenlik Notları
  
