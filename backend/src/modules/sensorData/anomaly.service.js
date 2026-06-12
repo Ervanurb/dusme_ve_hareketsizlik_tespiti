@@ -1,6 +1,6 @@
 const pool = require("../../config/db");
 
-const FALL_THRESHOLD = Number(process.env.FALL_THRESHOLD || 1.8);
+const FALL_THRESHOLD = Number(process.env.FALL_THRESHOLD || 1.6);
 const INACTIVITY_SECONDS = Number(process.env.INACTIVITY_SECONDS || 30);
 const MOVEMENT_EPSILON = Number(process.env.MOVEMENT_EPSILON || 0.08);
 const INACTIVITY_COOLDOWN_SECONDS = Number(
