@@ -72,7 +72,7 @@ Veri akışı: mobil uygulama sensör verisini gönderir → backend cihaz sahip
 </td>
 
 <td align="center">
-<img src="images/mobil_kayıt_ol.jpeg" width="180"><br>
+<img src="images/mobil_kayit_ol.jpeg" width="180"><br>
 <b>Kayıt</b>
 </td>
 
@@ -111,37 +111,66 @@ Veri akışı: mobil uygulama sensör verisini gönderir → backend cihaz sahip
 
 ## 💻 Web Paneli
 
-<p align="center">
-  <img src="images/web_giris_yap.png" width="500">
-</p>
+<table align="center">
+<tr>
+<td align="center">
+<img src="images/web_giris_yap.png" width="400"><br>
+<b>Giriş Sayfası</b>
+</td>
 
-<p align="center">
-  <img src="images/web_kayit_ol.png" width="500">
-</p>
+<td align="center">
+<img src="images/web_kayit_ol.png" width="400"><br>
+<b>Kayıt Sayfası</b>
+</td>
+</tr>
+</table>
 
-<p align="center">
-  <img src="images/web_kullanici_panel.png" width="650">
-</p>
+<br>
 
-<p align="center">
-  <img src="images/web_kullanici_veri.png" width="650">
-</p>
+<table align="center">
+<tr>
+<td align="center">
+<img src="images/web_kullanici_panel.png" width="420"><br>
+<b>Kullanıcı Paneli</b>
+</td>
 
-<p align="center">
-  <img src="images/web_kullanici_alarm.png" width="650">
-</p>
+<tr>
+<td colspan="2" align="center">
+<img src="images/web_kullanici_veri.png" width="550"><br>
+<b>Kullanıcı Veri Ekranı</b>
+</td>
+</tr>
+</table>
 
-<p align="center">
-  <img src="images/web_admin_panel.png" width="650">
-</p>
+<td align="center">
+<img src="images/web_kullanici_alarm.png" width="420"><br>
+<b>Kullanıcı Alarm Ekranı</b>
+</td>
+</tr>
 
-<p align="center">
-  <img src="images/web_admin_veri.png" width="650">
-</p>
+<br>
 
-<p align="center">
-  <img src="images/web_admin_alarm.png" width="650">
-</p>
+<table align="center">
+<tr>
+<td align="center">
+<img src="images/web_admin_panel.png" width="420"><br>
+<b>Admin Paneli</b>
+</td>
+
+<tr>
+<td colspan="2" align="center">
+<img src="images/web_admin_veri.png" width="550"><br>
+<b>Admin Veri Ekranı</b>
+</td>
+</tr>
+</table>
+
+<td align="center">
+<img src="images/web_admin_alarm.png" width="420"><br>
+<b>Admin Alarm Ekranı</b>
+</td>
+</tr>
+
 
 
 ## Kurulum ve Çalıştırma
