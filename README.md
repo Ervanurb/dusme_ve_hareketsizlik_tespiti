@@ -72,7 +72,7 @@ Veri akışı: mobil uygulama sensör verisini gönderir → backend cihaz sahip
 </td>
 
 <td align="center">
-<img src="images/mobil_kayit_ol.jpeg" width="180"><br>
+<img src="images/mobil_kayıt_ol.jpeg" width="180"><br>
 <b>Kayıt</b>
 </td>
 
