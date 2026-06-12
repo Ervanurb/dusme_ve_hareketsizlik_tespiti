@@ -1,5 +1,5 @@
 BEGIN;
-!(bir kez çalışmalı)
+-- UYARI: Bu UPDATE bloğu sadece ve sadece BİR KEZ çalıştırılmalıdır!
 UPDATE alerts SET created_at = created_at - INTERVAL '3 hours';
 
 -- Kolonları saat dilimi bilgisi taşıyan tipe çevir.
