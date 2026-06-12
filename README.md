@@ -143,6 +143,16 @@ Veri akışı: mobil uygulama sensör verisini gönderir → backend cihaz sahip
   <img src="images/web_admin_alarm.png" width="650">
 </p>
 
+## Veri Tabanı Şeması 
+
+<p align="center">
+  <img src="veritabani_semasi_cekirdek.png" width="350">
+</p>
+
+<p align="center">
+  <img src="veritabani_semasi_genisleme.png" width="600">
+</p>
+
 ## Kurulum ve Çalıştırma
  
 ### Ön Gereksinimler
