@@ -38,8 +38,6 @@ export default function HomeScreen() {
     accelerometer.x ** 2 + accelerometer.y ** 2 + accelerometer.z ** 2
   );
 
-  // Backend tarafındaki FALL_THRESHOLD (.env) ile aynı tutulmalı,
-  // aksi halde telefonda "Normal" görünürken sunucu alarm üretebilir.
   const FALL_THRESHOLD = 1.6;
   const isFallSuspected = accelerationMagnitude > FALL_THRESHOLD;
   const riskStatus = isFallSuspected || isInactive;
