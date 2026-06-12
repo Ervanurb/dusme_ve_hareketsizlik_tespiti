@@ -1,11 +1,5 @@
--- Mevcut (veri içeren) veritabanını yeni şemaya taşımak için migration.
--- Sıfırdan kurulumda buna gerek yok; schema.sql zaten TIMESTAMPTZ kullanıyor.
--- Not: Eski alerts kayıtlarında created_at, +3 saat kaydırılmış olarak yazılmıştı.
--- Aşağıdaki UPDATE bu kaymayı geri alır; sadece BİR KEZ çalıştırın.
-
 BEGIN;
-
--- Eski +3 saat hilesini geri al (yalnızca eski kayıtlar için, bir kez!)
+!(bir kez çalışmalı)
 UPDATE alerts SET created_at = created_at - INTERVAL '3 hours';
 
 -- Kolonları saat dilimi bilgisi taşıyan tipe çevir.
